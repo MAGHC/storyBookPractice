@@ -19,5 +19,5 @@ ButtonSelf.propTypes = {
 ButtonSelf.defaultProps = {
   size: "medium",
   mode: "light",
-  label: "button",
+  label: "버튼",
 };
