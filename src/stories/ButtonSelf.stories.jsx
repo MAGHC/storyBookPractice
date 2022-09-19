@@ -17,3 +17,13 @@ const Template = (args) => {
 export const Primary = Template.bind({});
 
 Primary.args = {};
+
+export const Secondary = Template.bind({});
+
+Secondary.args = {};
+
+export const DarkMode = Template.bind({});
+
+DarkMode.args = {
+  mode: "darkmode",
+};
