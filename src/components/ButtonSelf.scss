@@ -1,7 +1,28 @@
-.dark {
-  width: 10rem;
-}
+.button {
+  color: white;
 
-.light {
-  width: 20rem;
+  &__dark {
+    color: black;
+    &--medium {
+      width: 20rem;
+    }
+    &--small {
+      width: 10rem;
+    }
+    &--large {
+      width: 30rem;
+    }
+  }
+  &__light {
+    color: aqua;
+    &--medium {
+      width: 20rem;
+    }
+    &--small {
+      width: 10rem;
+    }
+    &--large {
+      width: 30rem;
+    }
+  }
 }

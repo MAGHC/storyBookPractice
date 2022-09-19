@@ -10,20 +10,19 @@ export default {
   },
 };
 
-const Template = (args) => {
-  <ButtonSelf {...args}></ButtonSelf>;
-};
+const Template = (args) => <ButtonSelf {...args}></ButtonSelf>;
 
-export const Primary = Template.bind({});
+// export const Primary = Template.bind({});
 
-Primary.args = {};
+// Primary.args = {};
 
-export const Secondary = Template.bind({});
+// export const Secondary = Template.bind({});
 
-Secondary.args = {};
+// Secondary.args = {};
 
 export const DarkMode = Template.bind({});
 
 DarkMode.args = {
-  mode: "darkmode",
+  mode: "dark",
+  size: "medium",
 };
