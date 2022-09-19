@@ -1,4 +1,6 @@
 import React from "react";
-import style from "./ButtonSelf.sass";
+import "./ButtonSelf.scss";
 
-export const ButtonSelf = () => {};
+export const ButtonSelf = () => {
+  return <button className="button">클릭</button>;
+};
