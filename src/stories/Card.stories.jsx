@@ -1,3 +1,4 @@
+import React from "react";
 import { Card } from "../components/Card";
 
 export default {
@@ -8,7 +9,7 @@ export default {
   },
 };
 
-const Template = (args) => <Card>{...args}</Card>;
+const Template = (args) => <Card {...args}></Card>;
 
 export const Primary = Template.bind({});
 
