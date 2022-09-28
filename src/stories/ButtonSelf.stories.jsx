@@ -6,7 +6,7 @@ export default {
   title: "컴포넌트/ButtonSelf",
   component: ButtonSelf,
   parameters: {
-    layout: "cetered",
+    layout: "centered",
   },
 };
 
