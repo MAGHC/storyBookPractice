@@ -1,4 +1,3 @@
-import React from "react";
 import "./ButtonSelf.scss";
 import PropTypes from "prop-types";
 
