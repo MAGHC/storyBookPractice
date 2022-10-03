@@ -1,7 +1,19 @@
 .card {
+  text-align: center;
   &__side {
     &--front {
-      font: size 4rem;
+      color: black;
+    }
+    &--back {
+      color: aqua;
+    }
+  }
+  &__picture {
+    width: 10rem;
+    height: 10rem;
+    background: url("./assets/스누피카드.png") center no-repeat;
+
+    &--front {
     }
     &--back {
     }
