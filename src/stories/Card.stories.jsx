@@ -4,9 +4,6 @@ import { Card } from "../components/Card";
 export default {
   title: "컴포넌트/Card",
   component: Card,
-  parameters: {
-    layout: "centered",
-  },
 };
 
 //{ frontlabel, backlabel, lifront, liback } 헷갈려서 프룹스 다적음
