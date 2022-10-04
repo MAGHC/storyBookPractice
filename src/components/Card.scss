@@ -1,16 +1,19 @@
 .card {
   position: relative;
   text-align: center;
+  perspective: 150rem;
   &__side {
     height: 20rem;
-    background-color: antiquewhite;
     position: absolute;
     top: 0;
     left: 0;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: all 0.8s ease;
+    overflow: hidden;
     &--front {
       color: black;
+      background-color: antiquewhite;
     }
     &--back {
       color: aqua;
@@ -21,10 +24,21 @@
     width: 10rem;
     height: 10rem;
     background: url("./assets/스누피카드.png") center no-repeat;
+    transition: all 0.8s ease;
 
     &--front {
     }
     &--back {
+      transform: rotateY(180deg);
     }
+  }
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+  &:hover &__picture--back {
+    transform: rotateY(180deg);
   }
 }
