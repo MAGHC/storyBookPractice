@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+}
+
+.image1 {
+  position: absolute;
+  top: 0;
+}
+.image2 {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+}
+.image3 {
+  position: absolute;
+  bottom: 1rem;
+  right: 0.1rem;
+}
+
+.composition {
+  transition: all 0.2s ease;
+}
+
+.composition:hover {
+  z-index: 5;
+  outline: 2rem solid black;
+  transform: scale(1.05);
+}
