@@ -1,8 +1,8 @@
-import { fireEvent, render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Login from "./Login";
 
 test("renders learn react link", () => {
   render(<Login />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const textElement = screen.getByText(`로그인`);
+  expect(textElement).toBeInTheDocument();
 });
