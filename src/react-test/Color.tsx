@@ -15,6 +15,7 @@ const Color = () => {
       <button onClick={newBtnColor} style={{ backgroundColor: color }}>
         {text}
       </button>
+      <input type="checkbox"></input>
     </>
   );
 };

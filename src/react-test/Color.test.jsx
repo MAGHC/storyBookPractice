@@ -18,3 +18,16 @@ test("button has correct initial color", () => {
   //텍스트변경 확인
   expect(colorBtn.textContent).toBe("변경완료");
 });
+
+test("initial conditions", () => {
+  render(<Color />);
+  // 버튼 활성화 상태로 시작하는지 확인
+
+  const colorBtn = screen.getByRole("button", { name: "색상변경" });
+
+  expect(colorBtn).toBeEnabled();
+
+  // 체크박스 시작상태 확인
+  const checkBox = screen.getByRole("checkbox");
+  expect(checkBox).not.toBeChecked();
+});
