@@ -4,6 +4,7 @@ import { useState } from "react";
 const Color = () => {
   const [color, setColor] = useState("red");
   const [text, setText] = useState("색상변경");
+  const [disabled, setDisabled] = useState(false);
 
   const newBtnColor = () => {
     color === "red" ? setColor("blue") : setColor("red");
@@ -12,10 +13,16 @@ const Color = () => {
 
   return (
     <>
-      <button onClick={newBtnColor} style={{ backgroundColor: color }}>
+      <button disabled={disabled} onClick={newBtnColor} style={{ backgroundColor: color }}>
         {text}
       </button>
-      <input type="checkbox"></input>
+      <input
+        defaultChecked={disabled}
+        type="checkbox"
+        onChange={(e) => {
+          setDisabled(e.target.checked);
+        }}
+      ></input>
     </>
   );
 };
