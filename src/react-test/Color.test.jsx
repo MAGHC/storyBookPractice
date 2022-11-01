@@ -1,5 +1,7 @@
 import Color from "./Color";
 
+import { replaceCamelWithSpaces } from "./Color";
+
 import { render, screen, fireEvent } from "@testing-library/react";
 
 test("button has correct initial color", () => {
@@ -43,4 +45,16 @@ test("체크박스 disables buuton on first click and enables on a second click"
 
   fireEvent.click(checkbox);
   expect(button).toBeEnabled();
+});
+
+describe("spaces before camel-case capital letters ", () => {
+  test("works for no inner capital letters", () => {
+    expect(replaceCamelWithSpaces("Red")).toBe("Red");
+  });
+  test("works for one inner capital letter", () => {
+    expect(replaceCamelWithSpaces("MidnigihtBlue")).toBe("Midnigiht Blue");
+  });
+  test("works for multiple inner capital inner", () => {
+    expect(replaceCamelWithSpaces("MediuemVioletRed")).toBe("Mediuem Violet Red");
+  });
 });

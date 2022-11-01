@@ -1,6 +1,10 @@
 import React from "react";
 import { useState } from "react";
 
+export function replaceCamelWithSpaces(colorName) {
+  return colorName.replace(/\B([A-Z])\B/g, " $1");
+}
+
 const Color = () => {
   const [color, setColor] = useState("red");
   const [text, setText] = useState("색상변경");
